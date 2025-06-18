@@ -1,3 +1,17 @@
+@font-face {
+    font-family: pixel;
+    src: url(assets/ADDSBP__.TTF);
+}
+
+@font-face {
+    font-family: squigglyPixel;
+    src: url(assets/KiwiSoda.ttf);
+}
+
+body {
+    background-color: black;
+}
+
 .center-div {
     justify-content: center;
     display: flex;
@@ -6,21 +20,26 @@
 }
 
 .main-carrd {
-    height: 500px;
     width: 400px;
     border: solid;
     border-width: 5px;
     border-color: rgb(252, 2, 2);
-    background-color: black;
     color: red;
-    padding: 10px;
+}
+
+.heading {
+    background-color: red;
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+    font-family: pixel;
 }
 
 .about {
+    margin: 5px;
     border: inherit;
     border-color: inherit;
     border-width: 3px;
-    height: 250px;
     padding: 5px;
     display: flex;
     text-align: left;
@@ -28,36 +47,83 @@
 
 .about .col-1 {
     width: 150px;
-    border:inherit;
     margin-right: 5px;
     padding: 5px;
 }
 
+.about .col-1 img {
+    margin-top: 5px;
+    max-width: 150px;
+}
+
 .about .col-2 {
-    border:inherit;
     width: 220px;
     padding: 5px;
 }
 
 .links {
+    margin: 0px 5px 5px 5px;
     border: inherit;
     border-color: inherit;
     border-width: 3px;
-    margin: 5px 0px;
-    height: 85px;
-    padding-bottom: 7px;
-}
-
-.links .subtitle {
-    width: inherit;
-    background-color: red;
-    color: white;
-    margin-bottom: 5px;
+    padding: 5px 0px;
+    text-align: center;
 }
 
 .links img {
     max-width: 60px;
     border-radius: 50%;
     border: transparent;
-    margin-left: 2px;
+}
+
+.info-header {
+  position: relative;
+  display: inline-block;
+  background-color: red;
+  color: #fff;
+  padding: 0px 5px;
+}
+
+.info-header:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110%;
+  height: 100%;
+  background: red;
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -webkit-transform: skew(35deg);
+  -ms-transform: skew(35deg);
+  transform: skew(35deg);
+  z-index: -1;
+}
+
+.info-container {
+    border: solid;
+    border-color: red;
+    border-width: 2px;
+    padding: 5px;
+}
+
+.subheading {
+    font-family: squigglyPixel;
+    font-size: 25px;
+    text-align: center;
+    background-color: red;
+    color: black;
+    margin: 10px 5px 5px 5px;
+}
+
+@media only screen and (max-width: 600px){
+    .main-carrd {
+        width: 300px;
+    }
+
+    .about {
+        display: inline-block;
+        padding: 0px 28px 10px 28px;
+    }
 }
