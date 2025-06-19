@@ -112,15 +112,44 @@ body {
     font-family: squigglyPixel;
     font-size: 25px;
     text-align: center;
-    background-color: red;
+    background-color: rgb(228, 47, 47);
     color: black;
     margin: 10px 5px 5px 5px;
+    border-style: outset;
+    border-color: rgb(140, 31, 31);
+    max-width: 390px;
+    width: 100%;
+}
+
+.subheading:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.cool-stuff {
+    margin: 0px 5px 5px 5px;
+    display: none;
+    text-align: center;
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.cool-stuff img {
+    max-width: 127px;
 }
 
 
 @media only screen and (max-width: 600px){
     .main-carrd {
         width: 300px;
+    }
+
+    .subheading {
+        max-width: 290px;
     }
 
     .about {
