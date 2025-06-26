@@ -1,11 +1,11 @@
 @font-face {
     font-family: pixel;
-    src: url(assets/ADDSBP__.TTF);
+    src: url(../assets/ADDSBP__.TTF);
 }
 
 @font-face {
     font-family: squigglyPixel;
-    src: url(assets/KiwiSoda.ttf);
+    src: url(../assets/KiwiSoda.ttf);
 }
 
 body {
@@ -138,10 +138,21 @@ body {
   100% { opacity: 1; }
 }
 
+.jumpscare {
+    animation: fadeIn 10s;
+}
+
 .cool-stuff img {
     max-width: 127px;
 }
 
+.link-text a{
+    color: red;
+}
+
+.link-text a:hover {
+    color: white;
+}
 
 @media only screen and (max-width: 600px){
     .main-carrd {
