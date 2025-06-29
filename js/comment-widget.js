@@ -44,10 +44,10 @@ let s_includeUrlParameters = false; // Makes new comment sections on pages with 
 const s_fixRarebitIndexPage = false; // If using Rarebit, change to true to make the index page and page 1 of your webcomic have the same comment section
 
 // Word filter - Censor profanity, etc
-const s_wordFilterOn = false; // True for on, false for off
+const s_wordFilterOn = true; // True for on, false for off
 const s_filterReplacement = '****'; // Change what filtered words are censored with (**** is the default)
 const s_filteredWords = [ // Add words to filter by putting them in quotes and separating with commas (ie. 'heck', 'dang')
-    'heck', 'dang'
+    'chink', 'gook', 'zipperhead',
 ]
 
 // Text - Change what messages/text appear on the form and in the comments section (Mostly self explanatory)
